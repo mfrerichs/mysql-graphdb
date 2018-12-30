@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>graphdb++: visualization.cpp Quellcode</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">graphdb++
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Erzeugt von Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Hauptseite</span></a></li>
+      <li><a href="annotated.html"><span>Klassen</span></a></li>
+      <li class="current"><a href="files.html"><span>Dateien</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Suchen" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Auflistung&#160;der&#160;Dateien</span></a></li>
+      <li><a href="globals.html"><span>Datei-Elemente</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('visualization_8cpp_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Alle</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klassen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Dateien</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funktionen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variablen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Aufzählungen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Aufzählungswerte</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Makrodefinitionen</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">visualization.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="visualization_8cpp.html">gehe zur Dokumentation dieser Datei</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="visualization_8h.html">visualization.h</a>&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="visualization_8h.html#aa02af188add792dd2138b6c1ecc1a0da">    9</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="visualization_8cpp.html#a619ba4d942b32c338213f3e902c41598">draw_graph</a>(<a class="code" href="class_result.html">Result</a> res) {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    fstream f;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    f.open(<span class="stringliteral">&quot;visualization.dot&quot;</span>, ios::out);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    f &lt;&lt; <span class="stringliteral">&quot;digraph visualization {&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    f &lt;&lt; <span class="stringliteral">&quot;nodesep=5.0&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    vector &lt; Node &gt; nodes = res.<a class="code" href="class_result.html#a216391dfcbe57b80eed3f01c40933e6e">getNodes</a>();</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    vector &lt; Edge &gt; edges = res.<a class="code" href="class_result.html#ac4843f94aa822b159ba4b5155285abdd">getUniqueEdges</a>();</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">for</span> (vector&lt;Node&gt;::iterator it = nodes.begin(); it != nodes.end(); it++) {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        f &lt;&lt; it-&gt;getId() &lt;&lt; <span class="stringliteral">&quot;[shape=none, margin=0, label =&lt;&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        f</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                &lt;&lt; <span class="stringliteral">&quot;&lt;TABLE BORDER=\&quot;1\&quot; CELLBORDER=\&quot;0\&quot; CELLPADDING=\&quot;5\&quot; CELLSPACING=\&quot;5\&quot;&gt;&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                &lt;&lt; endl; <span class="comment">// CELLSPACING=\&quot;0\&quot; CELLPADDING=\&quot;4\&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        f &lt;&lt; <span class="stringliteral">&quot;&lt;TR&gt;&lt;TD bgcolor=\&quot;lightblue\&quot;&gt;&quot;</span> &lt;&lt; it-&gt;getType() &lt;&lt; <span class="stringliteral">&quot;&lt;/TD&gt;&lt;/TR&gt;&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                &lt;&lt; endl;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        map &lt; std::string, std::string &gt; nodeprops = it-&gt;getProperties();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordflow">for</span> (map&lt;std::string, std::string&gt;::iterator propsIt =</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                nodeprops.begin(); propsIt != nodeprops.end(); propsIt++) {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            f &lt;&lt; <span class="stringliteral">&quot;&lt;TR&gt;&lt;TD&gt;&quot;</span> &lt;&lt; propsIt-&gt;first &lt;&lt; <span class="stringliteral">&quot;: &quot;</span>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            f &lt;&lt; propsIt-&gt;second &lt;&lt; <span class="stringliteral">&quot;&lt;/TD&gt;&lt;/TR&gt;&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        }</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        f &lt;&lt; <span class="stringliteral">&quot;&lt;/TABLE&gt;&gt;]&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    }</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">for</span> (vector&lt;Edge&gt;::iterator it = edges.begin(); it != edges.end(); it++) {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        f &lt;&lt; it-&gt;getSource().getId();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        f &lt;&lt; <span class="stringliteral">&quot; -&gt; &quot;</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        f &lt;&lt; it-&gt;getTarget().getId();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        f &lt;&lt; <span class="stringliteral">&quot;[label=&lt;&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        f</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                &lt;&lt; <span class="stringliteral">&quot;&lt;TABLE BORDER=\&quot;0\&quot; CELLBORDER=\&quot;0\&quot; CELLPADDING=\&quot;0\&quot; CELLSPACING=\&quot;5\&quot;&gt;&quot;</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                &lt;&lt; endl;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">//f &lt;&lt; &quot;&lt;u&gt;&quot; &lt;&lt; it-&gt;getType() &lt;&lt; &quot;&lt;/u&gt;&lt;br/&gt;&quot; &lt;&lt; endl;</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        f</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                &lt;&lt; <span class="stringliteral">&quot;&lt;TR&gt;&lt;TD align=\&quot;left\&quot;&gt;&lt;FONT POINT-SIZE=\&quot;16.0\&quot; COLOR=\&quot;#00008B\&quot;&gt;&quot;</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                &lt;&lt; it-&gt;getType() &lt;&lt; <span class="stringliteral">&quot;&lt;/FONT&gt;&lt;/TD&gt;&lt;/TR&gt;&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        map &lt; std::string, std::string &gt; edgeprops = it-&gt;getProperties();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">for</span> (map&lt;std::string, std::string&gt;::iterator propsIt =</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                edgeprops.begin(); propsIt != edgeprops.end(); propsIt++) {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">//f &lt;&lt; propsIt-&gt;first &lt;&lt; &quot;: &quot; &lt;&lt; propsIt-&gt;second &lt;&lt; &quot;&lt;br/&gt;&quot; &lt;&lt; endl;</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            f &lt;&lt; <span class="stringliteral">&quot;&lt;TR&gt;&lt;TD align=\&quot;left\&quot;&gt;&quot;</span> &lt;&lt; propsIt-&gt;first &lt;&lt; <span class="stringliteral">&quot;: &quot;</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            f &lt;&lt; propsIt-&gt;second &lt;&lt; <span class="stringliteral">&quot;&lt;/TD&gt;&lt;/TR&gt;&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        f &lt;&lt; <span class="stringliteral">&quot;&lt;/TABLE&gt;&gt;]&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">//f &lt;&lt; &quot;&gt;]&quot; &lt;&lt; endl;</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    f &lt;&lt; <span class="stringliteral">&quot;}&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    f.close();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="ttc" id="class_result_html_ac4843f94aa822b159ba4b5155285abdd"><div class="ttname"><a href="class_result.html#ac4843f94aa822b159ba4b5155285abdd">Result::getUniqueEdges</a></div><div class="ttdeci">std::vector&lt; Edge &gt; getUniqueEdges()</div><div class="ttdef"><b>Definition:</b> <a href="_result_8cpp_source.html#l00061">Result.cpp:61</a></div></div>
+<div class="ttc" id="visualization_8h_html"><div class="ttname"><a href="visualization_8h.html">visualization.h</a></div><div class="ttdoc">Stellt eine Funktionalitaet zur Visualisierung von Ergebnissen einer Graphtraversierung (Result) zur ...</div></div>
+<div class="ttc" id="class_result_html_a216391dfcbe57b80eed3f01c40933e6e"><div class="ttname"><a href="class_result.html#a216391dfcbe57b80eed3f01c40933e6e">Result::getNodes</a></div><div class="ttdeci">std::vector&lt; Node &gt; getNodes()</div><div class="ttdef"><b>Definition:</b> <a href="_result_8cpp_source.html#l00031">Result.cpp:31</a></div></div>
+<div class="ttc" id="class_result_html"><div class="ttname"><a href="class_result.html">Result</a></div><div class="ttdoc">Repraesentiert ein Ergebnis einer Graphtraversierung mittels Traverser. Ein Result bietet Zugriff auf...</div><div class="ttdef"><b>Definition:</b> <a href="_result_8h_source.html#l00014">Result.h:14</a></div></div>
+<div class="ttc" id="visualization_8cpp_html_a619ba4d942b32c338213f3e902c41598"><div class="ttname"><a href="visualization_8cpp.html#a619ba4d942b32c338213f3e902c41598">draw_graph</a></div><div class="ttdeci">void draw_graph(Result res)</div><div class="ttdef"><b>Definition:</b> <a href="visualization_8cpp_source.html#l00009">visualization.cpp:9</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d522931ffa1371640980b621734a4381.html">Users</a></li><li class="navelem"><a class="el" href="dir_5cd36800a002aa0270c69f595bb43bc4.html">Marc</a></li><li class="navelem"><a class="el" href="dir_2bb45b611f8d68a38aca4fdbfbc2a12e.html">Desktop</a></li><li class="navelem"><a class="el" href="dir_8d92015c2d2714c050070d4db950911b.html">graphdb</a></li><li class="navelem"><a class="el" href="visualization_8cpp.html">visualization.cpp</a></li>
+    <li class="footer">Erzeugt am Mit Jul 2 2014 13:27:51 für graphdb++ von
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,571 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>graphdb++: Traverser Klassenreferenz</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">graphdb++
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Erzeugt von Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Hauptseite</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Klassen</span></a></li>
+      <li><a href="files.html"><span>Dateien</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Suchen" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Auflistung&#160;der&#160;Klassen</span></a></li>
+      <li><a href="classes.html"><span>Klassen-Verzeichnis</span></a></li>
+      <li><a href="hierarchy.html"><span>Klassenhierarchie</span></a></li>
+      <li><a href="functions.html"><span>Klassen-Elemente</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_traverser.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Alle</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klassen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Dateien</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funktionen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variablen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Aufzählungen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Aufzählungswerte</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Makrodefinitionen</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Öffentliche Methoden</a> &#124;
+<a href="class_traverser-members.html">Aufstellung aller Elemente</a>  </div>
+  <div class="headertitle">
+<div class="title">Traverser Klassenreferenz</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Bietet die Funktionalitaet einer Graphtraversierung sowie Pfadsuche unter Angabe bestimmter "Filterkriterien".  
+ <a href="class_traverser.html#details">Mehr ...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_traverser_8h_source.html">Traverser.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Öffentliche Methoden</h2></td></tr>
+<tr class="memitem:a66c714022f3e15a6f290d25ad6c3a5fa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traverser.html#a66c714022f3e15a6f290d25ad6c3a5fa">Traverser</a> (<a class="el" href="class_node.html">Node</a> &amp;)</td></tr>
+<tr class="separator:a66c714022f3e15a6f290d25ad6c3a5fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a855a4fdf16164ee5387dec812bda2269"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traverser.html#a855a4fdf16164ee5387dec812bda2269">~Traverser</a> (void)</td></tr>
+<tr class="separator:a855a4fdf16164ee5387dec812bda2269"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a9e2e784cbcf5d9e9305137078d5437"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traverser.html#a1a9e2e784cbcf5d9e9305137078d5437">setDirection</a> (int)</td></tr>
+<tr class="separator:a1a9e2e784cbcf5d9e9305137078d5437"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39e5a76dffccd9f396034a62b67139b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traverser.html#a39e5a76dffccd9f396034a62b67139b8">setKeepGoing</a> (bool)</td></tr>
+<tr class="separator:a39e5a76dffccd9f396034a62b67139b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77838ed4c977f6018758210e0df6c1b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traverser.html#a77838ed4c977f6018758210e0df6c1b9">addEdgeType</a> (char *)</td></tr>
+<tr class="separator:a77838ed4c977f6018758210e0df6c1b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01b324a5cac73a24dea9d830e8882fcf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traverser.html#a01b324a5cac73a24dea9d830e8882fcf">addNodeType</a> (char *)</td></tr>
+<tr class="separator:a01b324a5cac73a24dea9d830e8882fcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad20460b6f69fddee21f470bfaee82442"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traverser.html#ad20460b6f69fddee21f470bfaee82442">addEdgeProperty</a> (char *)</td></tr>
+<tr class="separator:ad20460b6f69fddee21f470bfaee82442"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e4e8ea9c412c5eb8ea4180131f022f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traverser.html#a0e4e8ea9c412c5eb8ea4180131f022f1">addNodeProperty</a> (char *)</td></tr>
+<tr class="separator:a0e4e8ea9c412c5eb8ea4180131f022f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ebced7b9b9bdb76f9f9ecfbd01397e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traverser.html#a3ebced7b9b9bdb76f9f9ecfbd01397e6">addEdgeProperty</a> (char *, char *)</td></tr>
+<tr class="separator:a3ebced7b9b9bdb76f9f9ecfbd01397e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7049961af0fe8166d57cb465504af48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traverser.html#aa7049961af0fe8166d57cb465504af48">addNodeProperty</a> (char *, char *)</td></tr>
+<tr class="separator:aa7049961af0fe8166d57cb465504af48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acced29c9c415d2d0c18cb12512d2ffdc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traverser.html#acced29c9c415d2d0c18cb12512d2ffdc">pathDepthFirstRecursive</a> (<a class="el" href="class_track.html">Track</a> &amp;, std::vector&lt; <a class="el" href="class_track.html">Track</a> &gt; &amp;, std::vector&lt; <a class="el" href="class_edge.html">Edge</a> &gt; &amp;, <a class="el" href="class_node.html">Node</a> &amp;, <a class="el" href="class_node.html">Node</a> &amp;)</td></tr>
+<tr class="separator:acced29c9c415d2d0c18cb12512d2ffdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a387b3dc9d87a78efe73ce82b0eab4767"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_result.html">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traverser.html#a387b3dc9d87a78efe73ce82b0eab4767">breadthFirst</a> ()</td></tr>
+<tr class="separator:a387b3dc9d87a78efe73ce82b0eab4767"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af916e14f0654f8d5d40627c90d462ee0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_result.html">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traverser.html#af916e14f0654f8d5d40627c90d462ee0">depthFirst</a> ()</td></tr>
+<tr class="separator:af916e14f0654f8d5d40627c90d462ee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64ffa9aa2e5bea0a3214fb30aca0a4f5"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_track.html">Track</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traverser.html#a64ffa9aa2e5bea0a3214fb30aca0a4f5">paths</a> (<a class="el" href="class_node.html">Node</a> &amp;, <a class="el" href="class_node.html">Node</a> &amp;)</td></tr>
+<tr class="separator:a64ffa9aa2e5bea0a3214fb30aca0a4f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c735d54aef0cb600b3a2541ba502b23"><td class="memItemLeft" align="right" valign="top">MYSQL *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traverser.html#a1c735d54aef0cb600b3a2541ba502b23">getDbHandler</a> () const </td></tr>
+<tr class="separator:a1c735d54aef0cb600b3a2541ba502b23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Ausführliche Beschreibung</h2>
+<div class="textblock"><p>Bietet die Funktionalitaet einer Graphtraversierung sowie Pfadsuche unter Angabe bestimmter "Filterkriterien". </p>
+
+<p>Definiert in Zeile <a class="el" href="_traverser_8h_source.html#l00012">12</a> der Datei <a class="el" href="_traverser_8h_source.html">Traverser.h</a>.</p>
+</div><h2 class="groupheader">Beschreibung der Konstruktoren und Destruktoren</h2>
+<a class="anchor" id="a66c714022f3e15a6f290d25ad6c3a5fa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Traverser::Traverser </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_node.html">Node</a> &amp;&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>Startknoten </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definiert in Zeile <a class="el" href="_traverser_8cpp_source.html#l00006">6</a> der Datei <a class="el" href="_traverser_8cpp_source.html">Traverser.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a855a4fdf16164ee5387dec812bda2269"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Traverser::~Traverser </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definiert in Zeile <a class="el" href="_traverser_8cpp_source.html#l00015">15</a> der Datei <a class="el" href="_traverser_8cpp_source.html">Traverser.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentation der Elementfunktionen</h2>
+<a class="anchor" id="ad20460b6f69fddee21f470bfaee82442"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Traverser::addEdgeProperty </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>prop</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Fuegt eine Kanten-Eigenschaft zu der Menge der Eigenschaften hinzu, die bei der Traversierung betrachtet werden sollen. </p><dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>Eigenschaft </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definiert in Zeile <a class="el" href="_traverser_8cpp_source.html#l00047">47</a> der Datei <a class="el" href="_traverser_8cpp_source.html">Traverser.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3ebced7b9b9bdb76f9f9ecfbd01397e6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Traverser::addEdgeProperty </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Fuegt eine Kanten-Eigenschaft sowie einen dazugehoerigen Wert zu der Menge der Eigenschaften hinzu, die bei der Traversierung betrachtet werden sollen. </p><dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>Eigenschaft </td></tr>
+    <tr><td class="paramname">val</td><td>Dazugehoeriger Wert </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definiert in Zeile <a class="el" href="_traverser_8cpp_source.html#l00064">64</a> der Datei <a class="el" href="_traverser_8cpp_source.html">Traverser.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a77838ed4c977f6018758210e0df6c1b9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Traverser::addEdgeType </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Fuegt einen Kantentyp zu den Typen hinzu, die bei der Traversierung betrachtet werden sollen. </p><dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>Kantentyp </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definiert in Zeile <a class="el" href="_traverser_8cpp_source.html#l00031">31</a> der Datei <a class="el" href="_traverser_8cpp_source.html">Traverser.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0e4e8ea9c412c5eb8ea4180131f022f1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Traverser::addNodeProperty </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>prop</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Fuegt eine Knoten-Eigenschaft zu der Menge der Eigenschaften hinzu, die bei der Traversierung betrachtet werden sollen. </p><dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>Eigenschaft </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definiert in Zeile <a class="el" href="_traverser_8cpp_source.html#l00055">55</a> der Datei <a class="el" href="_traverser_8cpp_source.html">Traverser.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa7049961af0fe8166d57cb465504af48"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Traverser::addNodeProperty </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Fuegt eine Knoten-Eigenschaft sowie einen dazugehoerigen Wert zu der Menge der Eigenschaften hinzu, die bei der Traversierung betrachtet werden sollen. </p><dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>Eigenschaft </td></tr>
+    <tr><td class="paramname">val</td><td>Dazugehoeriger Wert </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definiert in Zeile <a class="el" href="_traverser_8cpp_source.html#l00076">76</a> der Datei <a class="el" href="_traverser_8cpp_source.html">Traverser.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a01b324a5cac73a24dea9d830e8882fcf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Traverser::addNodeType </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Fuegt einen Knotentyp zu den Typen hinzu, die bei der Traversierung betrachtet werden sollen. </p><dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>Knotentyp </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definiert in Zeile <a class="el" href="_traverser_8cpp_source.html#l00039">39</a> der Datei <a class="el" href="_traverser_8cpp_source.html">Traverser.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a387b3dc9d87a78efe73ce82b0eab4767"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_result.html">Result</a> Traverser::breadthFirst </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af916e14f0654f8d5d40627c90d462ee0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_result.html">Result</a> Traverser::depthFirst </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Fuehrt eine Graphtraversierung (ggf. unter Beruecksichtigung der vorher getaetigten Einschraenkungen) durch und liefert ein Ergebnis in Form eines <a class="el" href="class_result.html" title="Repraesentiert ein Ergebnis einer Graphtraversierung mittels Traverser. Ein Result bietet Zugriff auf...">Result</a> Objekts. </p><dl class="section return"><dt>Rückgabe</dt><dd>Ergebnis in Form eines <a class="el" href="class_result.html" title="Repraesentiert ein Ergebnis einer Graphtraversierung mittels Traverser. Ein Result bietet Zugriff auf...">Result</a> Objekts </dd></dl>
+
+<p>Definiert in Zeile <a class="el" href="_traverser_8cpp_source.html#l00107">107</a> der Datei <a class="el" href="_traverser_8cpp_source.html">Traverser.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1c735d54aef0cb600b3a2541ba502b23"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MYSQL * Traverser::getDbHandler </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definiert in Zeile <a class="el" href="_traverser_8cpp_source.html#l00083">83</a> der Datei <a class="el" href="_traverser_8cpp_source.html">Traverser.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acced29c9c415d2d0c18cb12512d2ffdc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Traverser::pathDepthFirstRecursive </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_track.html">Track</a> &amp;&#160;</td>
+          <td class="paramname"><em>track</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="class_track.html">Track</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>tracks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="class_edge.html">Edge</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>visited</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_node.html">Node</a> &amp;&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_node.html">Node</a> &amp;&#160;</td>
+          <td class="paramname"><em>target</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Rekursion zur Ausfuehrung der Tiefensuche (bei Pfadsuche). </p><dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">track</td><td>Pfad, der zusammengebaut wird </td></tr>
+    <tr><td class="paramname">tracks</td><td>Vector zum Speichern fertiger Pfade </td></tr>
+    <tr><td class="paramname">visited</td><td>Vector zum Speichern besuchter Kanten, um Zyklen zu vermeiden </td></tr>
+    <tr><td class="paramname">source</td><td>Jeweils naechster Knoten in der Tiefensuche </td></tr>
+    <tr><td class="paramname">target</td><td>Zielknoten </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definiert in Zeile <a class="el" href="_traverser_8cpp_source.html#l00348">348</a> der Datei <a class="el" href="_traverser_8cpp_source.html">Traverser.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a64ffa9aa2e5bea0a3214fb30aca0a4f5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="class_track.html">Track</a> &gt; Traverser::paths </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_node.html">Node</a> &amp;&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_node.html">Node</a> &amp;&#160;</td>
+          <td class="paramname"><em>target</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sucht Pfade zwischen zwei angegebenen Knoten und liefert diese zurueck. </p><dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>Startknoten (<a class="el" href="class_node.html" title="Repraesentiert einen Knoten im Graph. ">Node</a>) </td></tr>
+    <tr><td class="paramname">target</td><td>Zielknoten (<a class="el" href="class_node.html" title="Repraesentiert einen Knoten im Graph. ">Node</a>) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Rückgabe</dt><dd>Vector mit gefundenen Pfaden (<a class="el" href="class_track.html" title="Repraesentiert einen Pfad zwischen zwei Knoten. Wird i.d.R. durch eine Pfadsuche mittels Traverser er...">Track</a>) </dd></dl>
+
+<p>Definiert in Zeile <a class="el" href="_traverser_8cpp_source.html#l00093">93</a> der Datei <a class="el" href="_traverser_8cpp_source.html">Traverser.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1a9e2e784cbcf5d9e9305137078d5437"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Traverser::setDirection </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>direction</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Setzt die "Richtung" der Kanten, ueber die gelaufen werden soll. </p><dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">direction</td><td>Direction (INCOMING, OUTGOING, ALL) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definiert in Zeile <a class="el" href="_traverser_8cpp_source.html#l00023">23</a> der Datei <a class="el" href="_traverser_8cpp_source.html">Traverser.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a39e5a76dffccd9f396034a62b67139b8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Traverser::setKeepGoing </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>keepGoing</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Legt fest, ob die Graphtraversierung bei Knoten bzw. Kanten, die nicht dem festgelegten "Suchmuster" entsprechen, weiterlaufen soll oder nicht (Default: true). </p><dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">keepGoing</td><td>true, wenn weitergelaufen werden soll - sonst false </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definiert in Zeile <a class="el" href="_traverser_8cpp_source.html#l00336">336</a> der Datei <a class="el" href="_traverser_8cpp_source.html">Traverser.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien:<ul>
+<li><a class="el" href="_traverser_8h_source.html">Traverser.h</a></li>
+<li><a class="el" href="_traverser_8cpp_source.html">Traverser.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_traverser.html">Traverser</a></li>
+    <li class="footer">Erzeugt am Mit Jul 2 2014 13:27:52 für graphdb++ von
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>graphdb++: GraphElement.cpp Quellcode</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">graphdb++
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Erzeugt von Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Hauptseite</span></a></li>
+      <li><a href="annotated.html"><span>Klassen</span></a></li>
+      <li class="current"><a href="files.html"><span>Dateien</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Suchen" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Auflistung&#160;der&#160;Dateien</span></a></li>
+      <li><a href="globals.html"><span>Datei-Elemente</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_graph_element_8cpp_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Alle</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klassen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Dateien</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funktionen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variablen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Aufzählungen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Aufzählungswerte</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Makrodefinitionen</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">GraphElement.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_graph_element_8cpp.html">gehe zur Dokumentation dieser Datei</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_graph_element_8h.html">GraphElement.h</a>&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
+<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="class_graph_element.html#a566cf3fcaa26f3bcd00250c08c7d9a6b">    3</a></span>&#160;<a class="code" href="class_graph_element.html#a566cf3fcaa26f3bcd00250c08c7d9a6b">GraphElement::GraphElement</a>(<span class="keywordtype">char</span>* type) {</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    this-&gt;type = (<span class="keywordtype">char</span> *) malloc(strlen(type));</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    strcpy(this-&gt;type, type);</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;}</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_graph_element.html#a8b88001f7b2b87bc47ba39f4b2fc36ac">    8</a></span>&#160;<span class="keywordtype">char</span>* <a class="code" href="class_graph_element.html#a8b88001f7b2b87bc47ba39f4b2fc36ac">GraphElement::getType</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_graph_element.html#a1db93917415c67b63a15c8bae4b6b339">type</a>;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;}</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_graph_element.html#ac98458c3f65812faabad66e56e689fa1">   12</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_graph_element.html#ac98458c3f65812faabad66e56e689fa1">GraphElement::getId</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_graph_element.html#ae38d976b1553e171979ba0ae0ba118f9">id</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_graph_element.html#af1c63222dc65223ca152337b41d1aa8a">   16</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_graph_element.html#af1c63222dc65223ca152337b41d1aa8a">GraphElement::setId</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>) {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    this-&gt;<span class="keywordtype">id</span> = <a class="code" href="class_graph_element.html#ae38d976b1553e171979ba0ae0ba118f9">id</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_graph_element.html#a2417cf713cb4e8dbe49527fd153545bb">   20</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_graph_element.html#a2417cf713cb4e8dbe49527fd153545bb">GraphElement::setDbHandler</a>(MYSQL* my) {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    this-&gt;my = <a class="code" href="class_graph_element.html#a5fe0f7e1930d110aa85d48d8cd282890">my</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_graph_element.html#abac661ef62541b6176c8dead281d62c3">   24</a></span>&#160;MYSQL* <a class="code" href="class_graph_element.html#abac661ef62541b6176c8dead281d62c3">GraphElement::getDbHandler</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_graph_element.html#a5fe0f7e1930d110aa85d48d8cd282890">my</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
+<div class="ttc" id="class_graph_element_html_af1c63222dc65223ca152337b41d1aa8a"><div class="ttname"><a href="class_graph_element.html#af1c63222dc65223ca152337b41d1aa8a">GraphElement::setId</a></div><div class="ttdeci">void setId(int)</div><div class="ttdef"><b>Definition:</b> <a href="_graph_element_8cpp_source.html#l00016">GraphElement.cpp:16</a></div></div>
+<div class="ttc" id="class_graph_element_html_a2417cf713cb4e8dbe49527fd153545bb"><div class="ttname"><a href="class_graph_element.html#a2417cf713cb4e8dbe49527fd153545bb">GraphElement::setDbHandler</a></div><div class="ttdeci">void setDbHandler(MYSQL *)</div><div class="ttdef"><b>Definition:</b> <a href="_graph_element_8cpp_source.html#l00020">GraphElement.cpp:20</a></div></div>
+<div class="ttc" id="class_graph_element_html_ac98458c3f65812faabad66e56e689fa1"><div class="ttname"><a href="class_graph_element.html#ac98458c3f65812faabad66e56e689fa1">GraphElement::getId</a></div><div class="ttdeci">int getId() const </div><div class="ttdef"><b>Definition:</b> <a href="_graph_element_8cpp_source.html#l00012">GraphElement.cpp:12</a></div></div>
+<div class="ttc" id="class_graph_element_html_a566cf3fcaa26f3bcd00250c08c7d9a6b"><div class="ttname"><a href="class_graph_element.html#a566cf3fcaa26f3bcd00250c08c7d9a6b">GraphElement::GraphElement</a></div><div class="ttdeci">GraphElement(char *)</div><div class="ttdef"><b>Definition:</b> <a href="_graph_element_8cpp_source.html#l00003">GraphElement.cpp:3</a></div></div>
+<div class="ttc" id="class_graph_element_html_abac661ef62541b6176c8dead281d62c3"><div class="ttname"><a href="class_graph_element.html#abac661ef62541b6176c8dead281d62c3">GraphElement::getDbHandler</a></div><div class="ttdeci">MYSQL * getDbHandler() const </div><div class="ttdef"><b>Definition:</b> <a href="_graph_element_8cpp_source.html#l00024">GraphElement.cpp:24</a></div></div>
+<div class="ttc" id="_graph_element_8h_html"><div class="ttname"><a href="_graph_element_8h.html">GraphElement.h</a></div></div>
+<div class="ttc" id="class_graph_element_html_ae38d976b1553e171979ba0ae0ba118f9"><div class="ttname"><a href="class_graph_element.html#ae38d976b1553e171979ba0ae0ba118f9">GraphElement::id</a></div><div class="ttdeci">int id</div><div class="ttdef"><b>Definition:</b> <a href="_graph_element_8h_source.html#l00013">GraphElement.h:13</a></div></div>
+<div class="ttc" id="class_graph_element_html_a5fe0f7e1930d110aa85d48d8cd282890"><div class="ttname"><a href="class_graph_element.html#a5fe0f7e1930d110aa85d48d8cd282890">GraphElement::my</a></div><div class="ttdeci">MYSQL * my</div><div class="ttdef"><b>Definition:</b> <a href="_graph_element_8h_source.html#l00014">GraphElement.h:14</a></div></div>
+<div class="ttc" id="class_graph_element_html_a8b88001f7b2b87bc47ba39f4b2fc36ac"><div class="ttname"><a href="class_graph_element.html#a8b88001f7b2b87bc47ba39f4b2fc36ac">GraphElement::getType</a></div><div class="ttdeci">char * getType() const </div><div class="ttdef"><b>Definition:</b> <a href="_graph_element_8cpp_source.html#l00008">GraphElement.cpp:8</a></div></div>
+<div class="ttc" id="class_graph_element_html_a1db93917415c67b63a15c8bae4b6b339"><div class="ttname"><a href="class_graph_element.html#a1db93917415c67b63a15c8bae4b6b339">GraphElement::type</a></div><div class="ttdeci">char * type</div><div class="ttdef"><b>Definition:</b> <a href="_graph_element_8h_source.html#l00012">GraphElement.h:12</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d522931ffa1371640980b621734a4381.html">Users</a></li><li class="navelem"><a class="el" href="dir_5cd36800a002aa0270c69f595bb43bc4.html">Marc</a></li><li class="navelem"><a class="el" href="dir_2bb45b611f8d68a38aca4fdbfbc2a12e.html">Desktop</a></li><li class="navelem"><a class="el" href="dir_8d92015c2d2714c050070d4db950911b.html">graphdb</a></li><li class="navelem"><a class="el" href="_graph_element_8cpp.html">GraphElement.cpp</a></li>
+    <li class="footer">Erzeugt am Mit Jul 2 2014 13:27:51 für graphdb++ von
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
+</body>
+</html>
